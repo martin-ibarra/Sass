@@ -11,8 +11,8 @@ $textomenu: 'Medula One', cursive;
     li {
         display: inline-block;
         justify-content: center;
-        padding: 20px;
-        margin-left: 100px;
+        padding: 15px;
+
 
     }
 
@@ -28,12 +28,14 @@ $textomenu: 'Medula One', cursive;
         }
     }
 
+    /*nombre de la empresa*/
     p {
-        margin-top: 400px;
+        margin-top: 200px;
         color: white;
         text-align: center;
         font-family: 'Sarina', cursive;
         font-size: 35px;
-        color: rgba(197, 144, 106, 0.664);
+        color: rgb(192, 138, 99);
+        font-weight: bold;
     }
 }

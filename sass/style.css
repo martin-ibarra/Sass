@@ -2,10 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Medula+One&display=swap");
 /*letra logo*/
 @import url("https://fonts.googleapis.com/css2?family=Sarina&display=swap");
+/*letra titulo de la primera seccion*/
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap");
 /*letra footer logo*/
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&display=swap");
 /*letra menues quinta seccion*/
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+/*Letra quinta seccion - menues*/
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+/*letra quinta seccion listado-menues parrafo*/
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@200&display=swap");
 /*page*/
 .menu {
   background-image: url(img/fabrizio-magoni-boaDpmC-_Xo-unsplash.jpg);
@@ -13,12 +19,12 @@
   height: 600px;
   background-size: 100% 100%;
   background-attachment: fixed;
+  /*nombre de la empresa*/
 }
 .menu li {
   display: inline-block;
   justify-content: center;
-  padding: 20px;
-  margin-left: 100px;
+  padding: 15px;
 }
 .menu a {
   text-decoration: none;
@@ -30,12 +36,13 @@
   color: rgba(253, 186, 138, 0.664);
 }
 .menu p {
-  margin-top: 400px;
+  margin-top: 200px;
   color: white;
   text-align: center;
   font-family: "Sarina", cursive;
   font-size: 35px;
-  color: rgba(197, 144, 106, 0.664);
+  color: rgb(192, 138, 99);
+  font-weight: bold;
 }
 
 footer h6 {
@@ -56,10 +63,56 @@ footer .redes p {
   text-align: center;
 }
 
+/*variable parrafo primera seccion*/
+.primera-seccion h2 {
+  font-family: "Amita", cursive;
+  margin-top: 50px;
+  text-align: center;
+}
+.primera-seccion h5 {
+  font-family: "K2D", sans-serif;
+  text-align: center;
+}
+.primera-seccion p {
+  font-family: "K2D", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+/*variables "listado-menu"*/
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.segunda-seccion p {
+  font-family: "K2D", sans-serif;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.tercer-seccion img {
+  width: 100%;
+  background-size: cover;
+  height: 600px;
+  background: fixed;
+}
+
+/*cuarta seccion - foto y texto*/
+.cuarta-seccion h3 {
+  font-family: "Amita", cursive;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.cuarta-seccion p {
+  line-height: 2.5;
+  text-align: center;
+  font-family: "K2D", sans-serif;
+  font-size: 18px;
 }
 
 /*quinta seccion*/
@@ -74,4 +127,23 @@ body {
   padding-top: 30px;
   font-family: "Croissant One", cursive;
   font-size: 25px;
+}
+
+.listado-menu {
+  background-color: rgb(230, 230, 230);
+}
+.listado-menu h6 {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: "Croissant One", cursive;
+  font-weight: bold;
+}
+.listado-menu p {
+  margin-left: 20px;
+  font-family: "K2D", sans-serif;
+}
+.listado-menu li {
+  margin-left: 20px;
+  list-style: none;
+  font-family: "K2D", sans-serif;
 }/*# sourceMappingURL=style.css.map */

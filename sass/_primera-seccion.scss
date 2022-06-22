@@ -1,0 +1,23 @@
+/*variable parrafo primera seccion*/
+$parrafomenues: 'K2D', sans-serif;
+
+.primera-seccion {
+
+    h2 {
+        font-family: 'Amita', cursive;
+        margin-top: 50px;
+        text-align: center;
+
+    }
+
+    h5 {
+        font-family: $parrafomenues ;
+        text-align: center;
+    }
+
+    p {
+        font-family: $parrafomenues ;
+        text-align: center;
+        font-size: 20px;
+    }
+}
