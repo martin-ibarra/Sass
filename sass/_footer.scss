@@ -1,9 +1,15 @@
+/*footer de la pagina*/
+
 footer {
+    background-color: black;
+
+    /*armado del logo del footer*/
     h6 {
         text-align: center;
         padding-top: 60px;
         font-family: 'Big Shoulders Stencil Display', cursive;
         font-size: 50px;
+        color: #474545;
     }
 
     .eventos {
@@ -12,12 +18,15 @@ footer {
         color: rgb(206, 111, 44);
     }
 
+    /*fin del logo del footer*/
     p {
         text-align: center;
+        color: #474545;
     }
 
     .redes p {
         text-align: center;
+        color: #474545;
 
 
     }

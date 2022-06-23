@@ -1,18 +1,21 @@
+/*Google fonts*/
 /*letra menu*/
 @import url("https://fonts.googleapis.com/css2?family=Medula+One&display=swap");
 /*letra logo*/
 @import url("https://fonts.googleapis.com/css2?family=Sarina&display=swap");
 /*letra titulo de la primera seccion*/
 @import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap");
-/*letra footer logo*/
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&display=swap");
 /*letra menues quinta seccion*/
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 /*Letra quinta seccion - menues*/
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 /*letra quinta seccion listado-menues parrafo*/
 @import url("https://fonts.googleapis.com/css2?family=K2D:wght@200&display=swap");
-/*page*/
+/*letra footer logo*/
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&display=swap");
+/*Partials*/
+/*Variables del menu*/
+/*Menu Navbar*/
 .menu {
   background-image: url(img/fabrizio-magoni-boaDpmC-_Xo-unsplash.jpg);
   width: 100%;
@@ -45,11 +48,18 @@
   font-weight: bold;
 }
 
+/*footer de la pagina*/
+footer {
+  background-color: black;
+  /*armado del logo del footer*/
+  /*fin del logo del footer*/
+}
 footer h6 {
   text-align: center;
   padding-top: 60px;
   font-family: "Big Shoulders Stencil Display", cursive;
   font-size: 50px;
+  color: #474545;
 }
 footer .eventos {
   font-family: "Gotu", sans-serif;
@@ -58,13 +68,15 @@ footer .eventos {
 }
 footer p {
   text-align: center;
+  color: #474545;
 }
 footer .redes p {
   text-align: center;
+  color: #474545;
 }
 
 /*variable parrafo primera seccion*/
-.primera-seccion h2 {
+.primera-seccion h1 {
   font-family: "Amita", cursive;
   margin-top: 50px;
   text-align: center;
@@ -80,12 +92,16 @@ footer .redes p {
 }
 
 /*variables "listado-menu"*/
+/*map get*/
+/*P de la segunda seccion*/
+/*P de la cuarta seccion*/
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*seccion dos de la pagina*/
 .segunda-seccion p {
   font-family: "K2D", sans-serif;
   text-align: center;
@@ -93,6 +109,7 @@ body {
   margin-top: 30px;
 }
 
+/*tercer seccion de la pagina*/
 .tercer-seccion img {
   width: 100%;
   background-size: cover;
@@ -141,9 +158,16 @@ body {
 .listado-menu p {
   margin-left: 20px;
   font-family: "K2D", sans-serif;
+  margin-top: 30px;
 }
-.listado-menu li {
-  margin-left: 20px;
+.listado-menu .cuadro-1, .listado-menu .cuadro-2 {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  margin-top: 30px;
+}
+.listado-menu .cuadro-1 li, .listado-menu .cuadro-2 li {
   list-style: none;
   font-family: "K2D", sans-serif;
+  line-height: 2;
 }/*# sourceMappingURL=style.css.map */

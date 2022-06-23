@@ -1,18 +1,22 @@
+/*Google fonts*/
 /*letra menu*/
 @import url('https://fonts.googleapis.com/css2?family=Medula+One&display=swap');
 /*letra logo*/
 @import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
 /*letra titulo de la primera seccion*/
 @import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
-/*letra footer logo*/
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&display=swap');
+
 /*letra menues quinta seccion*/
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 /*Letra quinta seccion - menues*/
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 /*letra quinta seccion listado-menues parrafo*/
 @import url('https://fonts.googleapis.com/css2?family=K2D:wght@200&display=swap');
-/*page*/
+/*letra footer logo*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&display=swap');
+
+/*Partials*/
+
 @import "header";
 @import "footer";
 @import "primera-seccion";
@@ -21,6 +25,21 @@
 $letramenues: 'Croissant One', cursive;
 $parrafomenues: 'K2D', sans-serif;
 
+/*map get*/
+/*P de la segunda seccion*/
+$p-sec-dos: (
+    color:black,
+    centro:center,
+    tfuente:25px,
+    mtop:30px,
+);
+/*P de la cuarta seccion*/
+$p-sec-4: (
+    ilineado:2.5,
+    centro:center,
+    tfuente:18px
+);
+
 
 body {
     margin: 0;
@@ -28,14 +47,18 @@ body {
     box-sizing: border-box;
 }
 
+/*seccion dos de la pagina*/
+
 .segunda-seccion {
     p {
         font-family: $parrafomenues;
-        text-align: center;
-        font-size: 25px;
-        margin-top: 30px;
+        text-align: map-get($p-sec-dos, centro);
+        font-size: map-get($p-sec-dos, tfuente);
+        margin-top: map-get($p-sec-dos, mtop);
     }
 }
+
+/*tercer seccion de la pagina*/
 
 .tercer-seccion {
     img {
@@ -57,10 +80,10 @@ body {
     }
 
     p {
-        line-height: 2.5;
-        text-align: center;
+        line-height: map-get($p-sec-4, ilineado);
+        text-align: map-get($p-sec-4 , centro);
         font-family: $parrafomenues;
-        font-size: 18px;
+        font-size: map-get($p-sec-4 , tfuente);
     }
 }
 
@@ -92,11 +115,28 @@ body {
     p {
         margin-left: 20px;
         font-family: $parrafomenues;
+        margin-top: 30px;
     }
 
-    li {
-        margin-left: 20px;
-        list-style: none;
-        font-family: $parrafomenues;
+
+
+    .cuadro-1 {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        margin-top: 30px;
+
+
+        li {
+
+
+            list-style: none;
+            font-family: $parrafomenues;
+            line-height: 2;
+        }
+    }
+
+    .cuadro-2 {
+        @extend.cuadro-1;
     }
 }
